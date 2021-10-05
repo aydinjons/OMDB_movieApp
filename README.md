@@ -2,8 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
-1 - Clone the repo
-2- npm i (install node modules)
+1 - Clone the repo <br>
+2- npm i (install node modules) <br>
 3- ng s -o (serve)
 
 ## Development server
