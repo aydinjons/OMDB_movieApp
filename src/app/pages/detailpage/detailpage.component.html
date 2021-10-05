@@ -1,0 +1,28 @@
+<div class="container" *ngIf="selectedMovie">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h5>{{selectedMovie.Title}} </h5>
+                <p class="mb-0">{{selectedMovie.Plot}}</p>
+            </div><!-- / project-info-box -->
+
+            <div class="project-info-box">
+                <p><b>Genre:</b> {{selectedMovie.Genre}}</p>
+                <p><b>Year:</b>{{selectedMovie.Year}}</p>
+                <p><b>Actors:</b>{{selectedMovie.Actors}}</p>
+                <p><b>Director:</b> {{selectedMovie.Director}}</p>
+                <p class="mb-0"><b>IMDB Rating: </b>{{selectedMovie.imdbRating}}</p>
+            </div><!-- / project-info-box -->
+
+
+        </div><!-- / column -->
+
+        <div class="col-md-7">
+            <img [src]="selectedMovie.Poster" alt="project-image" class="rounded">
+            <div class="project-info-box bottom">
+                <p><b>Language:</b> {{selectedMovie.Language}} </p>
+                <p><b>Awards:</b>{{selectedMovie.Awards}}</p>
+            </div><!-- / project-info-box -->
+        </div><!-- / column -->
+    </div>
+</div>

@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css';
+body{
+    background-color:#1f1f1f;
+}
+.navbar{
+    width:100%;
+    background: #121212 !important;
+}
+.card-body{
+    background-color:#c5c5c5;
+}
+.card-body:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #f8f8f5;
+  }
+  .card-body:hover {
+    color: #ffffff;
+    box-shadow: 0 0 5px #ffffff;
+    text-shadow: 0 0 5px #b9b9b9;
+  }

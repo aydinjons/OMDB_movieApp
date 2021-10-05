@@ -1,0 +1,26 @@
+<div class="row" *ngIf="watchList">
+
+    <div class="example-2 card" *ngFor="let movie of watchList" >
+      <div class="wrapper" style=" background: url({{movie.Poster}}) center / cover no-repeat;">
+        <div class="header">
+          <div class="date">
+            <span class="day">{{movie.Year}}</span>
+          </div>
+          <ul class="menu-content">
+            <li>
+              <a href="#" class="fa fa-bookmark-o"></a>
+            </li>
+            <li><a href="#" class="fa fa-heart-o"><span>{{movie.Metascore}}</span></a></li>
+          </ul>
+        </div>
+        <div class="data">
+          <div class="content">
+            <span class="author">{{movie.Genre}}</span>
+            <h1 class="title"><a href="#">{{movie.Title}}</a></h1>
+            <p class="text">{{movie.Plot}}</p>
+            <a href="#" class="button">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,17 @@
+<ngb-carousel>
+    <ng-template *ngFor="let group of groups;" ngbSlide>
+        <div class="card-container">
+            <div class="card-wrapper" *ngFor="let movie of group">
+                <div class="card " *ngIf="movie.Poster.length >4">
+                    <img [src]="movie.Poster" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h6 class="card-title">{{movie.Title}}</h6>
+                        <p class="card-text">{{movie.Year}}</p>
+                        <a [routerLink]="['/details', movie.imdbID]" routerLinkActive="router-link-active"
+                            class="btn btn-primary" (click)="getDetailsOfMovie(movie.imdbID)">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</ngb-carousel>

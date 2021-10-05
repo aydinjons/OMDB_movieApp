@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="d-flex">
+        <input class="form-control me-sm-2" type="text" placeholder="Search" [(ngModel)]="movieName"
+            (keydown)="onKeydownMain($event)" />
+        <input  class="form-control me-sm-2" style="width: 5rem;" type="text" placeholder="year" [(ngModel)]="year"
+            (keydown)="onKeydownMain($event)" />
+        <button [routerLink]="['/result', movieName,'']" [disabled]="!movieName" routerLinkActive="router-link-active"
+            class="btn btn-secondary my-2 my-sm-0" type="click">
+            Search
+        </button>
+    </div>
+    <app-toasts aria-live="polite" aria-atomic="true"></app-toasts>
+</div>
