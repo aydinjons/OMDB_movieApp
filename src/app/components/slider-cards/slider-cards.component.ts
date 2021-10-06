@@ -19,15 +19,11 @@ export class SliderCardsComponent implements OnInit {
   ngOnInit(): void {
     this.imdbTop10.forEach((id) => {
       this.api.getImdbTop10(id).subscribe((resp) => {
-        this.movies.push(resp)
-        console.log( this.groups =  this.movies.reduce((r: any[][], e: any, i: number) =>
-        (i % this.n ? r[r.length - 1].push(e) : r.push([e])) && r
-    , []));
-        
+        this.movies.push(resp)    
       return this.groups =  this.movies.reduce((r: any[][], e: any, i: number) =>
         (i % this.n ? r[r.length - 1].push(e) : r.push([e])) && r
     , []); 
-        console.log(this.movies);
+       
         
       });
     });
