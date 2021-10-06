@@ -12,6 +12,8 @@ body{
 }
 .card-body{
     background-color:#c5c5c5;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(43,0,0,0);
+    border: none;
 }
 .card-body:hover::before {
     transform: scale(1.1);

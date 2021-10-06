@@ -19,6 +19,7 @@ import { SliderCardsComponent } from './components/slider-cards/slider-cards.com
 import {CarouselModule} from 'primeng/carousel';
 import { WatchlistCardsComponent } from './components/watchlist-cards/watchlist-cards.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FooterComponent } from './components/footer/footer.component';
     SliderCardsComponent,
     WatchlistCardsComponent,
     FooterComponent,
+    AboutComponent,
 
   ],
   imports: [
