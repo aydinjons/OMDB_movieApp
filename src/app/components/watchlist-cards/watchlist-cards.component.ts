@@ -7,7 +7,7 @@ import { ApiService } from 'src/app/services/api.service';
   styleUrls: ['./watchlist-cards.component.scss']
 })
 export class WatchlistCardsComponent implements OnInit {
-  list = ["tt0372784", "tt0103776","tt0111161"];
+  list = ["tt0372784", "tt0137523","tt0111161"];
   watchList: any =[];
   movieDetails: any;
   constructor(private api: ApiService) { }

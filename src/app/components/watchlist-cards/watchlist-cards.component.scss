@@ -51,8 +51,8 @@ h1 {
 // Base styles
 .card {
   float: left;
-
-  width: 33%;
+  width: 32%;
+  margin-right: 1%;
 
   .menu-content {
     @include cf;

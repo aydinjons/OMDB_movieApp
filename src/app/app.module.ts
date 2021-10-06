@@ -18,6 +18,7 @@ import { ImdbTop10Component } from './pages/imdb-top10/imdb-top10.component';
 import { SliderCardsComponent } from './components/slider-cards/slider-cards.component';
 import {CarouselModule} from 'primeng/carousel';
 import { WatchlistCardsComponent } from './components/watchlist-cards/watchlist-cards.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { WatchlistCardsComponent } from './components/watchlist-cards/watchlist-
     ImdbTop10Component,
     SliderCardsComponent,
     WatchlistCardsComponent,
+    FooterComponent,
 
   ],
   imports: [
