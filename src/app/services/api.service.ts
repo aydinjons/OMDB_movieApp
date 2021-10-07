@@ -18,7 +18,7 @@ yearQuery:string ="&y="
      console.log(keyword,year)
      return this.http.get(this.url + this.searchQuery + keyword + this.apiKey + this.yearQuery + year)
    }
-   getImdbTop10(id: string){
+   getMoviesById(id: string){
      return this.http.get(this.url + this.idSearch + id + this.apiKey)
    }
    getMovieDetails(id: any){

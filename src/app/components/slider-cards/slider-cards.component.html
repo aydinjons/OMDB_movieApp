@@ -7,8 +7,12 @@
                     <div class="card-body">
                         <h6 class="card-title">{{movie.Title}}</h6>
                         <p class="card-text">{{movie.Year}}</p>
+                        <div class="button-group">
                         <a [routerLink]="['/details', movie.imdbID]" routerLinkActive="router-link-active"
                             class="btn btn-primary" (click)="getDetailsOfMovie(movie.imdbID)">Details</a>
+                            <a  routerLinkActive="router-link-active"
+                            class="btn btn-primary" (click)="addToWatchList(movie.imdbID)">Add To Watch List</a>
+                        </div>
                     </div>
                 </div>
             </div>

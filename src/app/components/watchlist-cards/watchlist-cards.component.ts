@@ -14,7 +14,7 @@ export class WatchlistCardsComponent implements OnInit {
 
   ngOnInit(): void {
     this.list.forEach((id) => {
-      this.api.getImdbTop10(id).subscribe((resp: any) => {
+      this.api.getMoviesById(id).subscribe((resp: any) => {
         this.watchList.push(resp)    
       });
     });

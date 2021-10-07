@@ -20,6 +20,9 @@ import {CarouselModule} from 'primeng/carousel';
 import { WatchlistCardsComponent } from './components/watchlist-cards/watchlist-cards.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './pages/about/about.component';
+import { MywatchButtonComponent } from './components/mywatch-button/mywatch-button.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +39,7 @@ import { AboutComponent } from './pages/about/about.component';
     WatchlistCardsComponent,
     FooterComponent,
     AboutComponent,
+    MywatchButtonComponent,
 
   ],
   imports: [
@@ -44,7 +48,9 @@ import { AboutComponent } from './pages/about/about.component';
     NgbModule,
     HttpClientModule,
     FormsModule,
-    CarouselModule
+    CarouselModule,
+    FontAwesomeModule,
+
  
 
     

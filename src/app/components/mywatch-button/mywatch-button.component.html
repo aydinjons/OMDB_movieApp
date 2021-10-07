@@ -1,0 +1,12 @@
+<div class="watch-list-container" *ngIf="movies">
+    <div class="row">
+      <div class="col">
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle (click)="listMovies()">My Watch List</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button class="btn btn-outline-primary" id="sub-button"ngbDropdownItem  [routerLink]="['/details', movie.imdbID]" *ngFor="let movie of uniqueMovies">{{movie.Title}} </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

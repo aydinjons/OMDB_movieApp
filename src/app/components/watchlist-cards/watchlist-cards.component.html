@@ -18,7 +18,7 @@
             <span class="author">{{movie.Genre}}</span>
             <h1 class="title"><a href="#">{{movie.Title}}</a></h1>
             <p class="text">{{movie.Plot}}</p>
-            <a [routerLink]="['/details', movie.imdbID]" class="button" (click)="getDetailsOfMovie(movie.imdbID)">Details</a>
+            <a  class="button" [routerLink]="['/details', movie.imdbID]">Details</a>
           </div>
         </div>
       </div>

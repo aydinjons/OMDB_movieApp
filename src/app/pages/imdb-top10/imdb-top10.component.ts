@@ -15,7 +15,7 @@ export class ImdbTop10Component implements OnInit {
 
   ngOnInit(): void {
     this.imdbTop10.forEach((id) => {
-      this.api.getImdbTop10(id).subscribe((resp) => {
+      this.api.getMoviesById(id).subscribe((resp) => {
         this.topResult.push(resp) 
         console.log(this.topResult);
         
