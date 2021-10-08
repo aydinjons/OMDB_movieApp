@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { of } from "rxjs";
 import { ApiService } from "src/app/services/api.service";
 import { LocalstorageService } from "src/app/services/localstorage.service";
+import { ToastService } from "src/app/services/toast-service.service";
 
 @Component({
   selector: "slider-cards",
@@ -28,9 +29,11 @@ export class SliderCardsComponent implements OnInit {
   key: any;
   localStrogaeList:any =[]
   uniqueLocalStorage:any =[]
+  dangerName:string = "Movie added to your watch list"
   constructor(
     private api: ApiService,
-    private localStorage: LocalstorageService
+    private localStorage: LocalstorageService,
+    private toastService: ToastService
   ) {}
 
   ngOnInit(): void {
@@ -59,7 +62,10 @@ export class SliderCardsComponent implements OnInit {
       });
       this.localStorage.setItem("data", JSON.stringify(this.uniqueLocalStorage));
         console.log(this.uniqueLocalStorage)
-      
+        this.toastService.show(this.dangerName, {
+          classname: "bg-success text-light",
+          delay: 5000,
+        });
    } else {  
      alert("This Browser not supported this action")
    } 

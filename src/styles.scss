@@ -19,12 +19,15 @@ body{
     transform: scale(1.1);
     box-shadow: 0 0 15px #f8f8f5;
   }
-  .card-body:hover {
+.card-body:hover {
     color: #ffffff;
     box-shadow: 0 0 5px #ffffff;
     text-shadow: 0 0 5px #b9b9b9;
   }
-  .btn-primary{
+.btn-primary{
     background-color:#51575c;
     border:none;
   }
+  .carousel-control-prev, .carousel-control-next{
+    height:80% !important;
+}
